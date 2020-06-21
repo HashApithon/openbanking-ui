@@ -1,0 +1,32 @@
+{
+  "name": "@openbanking/ui-data",
+  "version": "0.0.1",
+  "description": "This layer maintains service calls and redux data ",
+  "keywords": [
+    "service"
+  ],
+  "author": "Soni Goyal <mailtosonigoyal@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HashApithon/openbanking-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/HashApithon/openbanking-ui/issues"
+  },
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
+}

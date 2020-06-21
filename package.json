@@ -1,5 +1,11 @@
 {
   "name": "openbanking-ui",
   "version": "0.0.1",
-  "description": "Open Banking Aggregator UI"
+  "description": "Open Banking Aggregator UI",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "start":"lerna run start --scope @openbanking/web-app --include-dependencies --parallel"
+  }
 }
