@@ -5,13 +5,11 @@
   "keywords": [
     "common"
   ],
-  "author": "Soni Goyal <mailtosonigoyal@gmail.com>",
+  "author": "",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/ui-common.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
