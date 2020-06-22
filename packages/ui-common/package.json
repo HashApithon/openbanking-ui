@@ -19,7 +19,7 @@
     "url": "git+https://github.com/HashApithon/openbanking-ui.git"
   },
   "scripts": {
-    "start":"npm run build",
+    "start":"npm run build -- -w",
     "build":"babel src --out-dir lib",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },

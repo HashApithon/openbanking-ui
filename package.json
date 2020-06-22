@@ -6,6 +6,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "start":"lerna run start --scope @openbanking/web-app --include-dependencies --parallel"
+    "start": "lerna run --scope @openbanking/web-app --include-dependencies --parallel start",
+    "postinstall": "lerna bootstrap --hoist"
   }
 }
