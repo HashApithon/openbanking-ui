@@ -1,4 +1,4 @@
-import { INIT_DATA } from '../actionCreators/app'
+import { INIT_DATA ,SET_DATA} from '../actionCreators/app'
 
 export const initializeData = (message) => {
     return {
@@ -6,3 +6,8 @@ export const initializeData = (message) => {
         message
     };
 }
+
+export const setData = (data) =>{
+    return { type:SET_DATA ,data} 
+}
+
