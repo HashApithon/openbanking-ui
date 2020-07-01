@@ -2,7 +2,6 @@
   "name": "@openbanking/web-app",
   "version": "0.0.1",
   "private": true,
-  "main": "src/index.js",
   "dependencies": {
     "@openbanking/ui-common": "0.0.1",
     "@openbanking/ui-data": "0.0.1",
@@ -14,7 +13,7 @@
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.0",
     "redux": "^4.0.5"
   },
   "scripts": {

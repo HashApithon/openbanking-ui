@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start":"npm run build -- -w",
-    "build":"babel src --out-dir lib",
+    "build":"babel src -d lib",
+    "copy":"cpy **/*.{css,svg} ../lib --cwd=src --parents",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -34,7 +35,6 @@
     "@babel/cli": "^7.10.3",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
-    "@babel/preset-react": "^7.10.1",
-    "babel-loader": "^8.1.0"
+    "@babel/preset-react": "^7.10.1"
   }
 }

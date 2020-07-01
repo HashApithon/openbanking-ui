@@ -1,5 +1,5 @@
 {
-  "name": "openbanking-ui",
+  "name": "@openbanking/ui",
   "version": "0.0.1",
   "description": "Open Banking Aggregator UI",
   "devDependencies": {
