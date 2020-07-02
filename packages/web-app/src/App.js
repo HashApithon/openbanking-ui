@@ -2,9 +2,11 @@ import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom'
 import Header from '@openbanking/ui-common/lib/Header';
 import ErrorBoundary from '@openbanking/ui-common/lib/Error'
+import Loading from '@openbanking/ui-common/lib/Loading';
 import Home from './Home'
 import Dashboard from './Dashboard'
 import './App.css';
+
 
 function App(props) {
   return (

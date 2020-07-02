@@ -3,7 +3,8 @@ import App from './App';
 import {initializeData} from '@openbanking/ui-data/src/actions/app'
 
 const mapStateToProps = state => ({
-    message: state.app.message
+    message: state.app.message,
+    loading: state.common.loading
 });
 
 
