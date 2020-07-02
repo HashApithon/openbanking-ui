@@ -1,7 +1,10 @@
 .header {
-    min-height: 52px;
+    min-height: 55px;
     background-color: #e6e2d3;
-    font-size: 14px;
+    font-size: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 .overlay{
