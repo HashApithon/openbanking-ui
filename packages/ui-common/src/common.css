@@ -1,3 +1,12 @@
+.header {
+    min-height: 55px;
+    background-color: #e6e2d3;
+    font-size: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
 .overlay{
     position: absolute;
     z-index: 999;

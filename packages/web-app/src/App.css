@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-content {
+  position: relative;
+  padding: 0 20px;
+  flex-grow: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
+  margin: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard .text {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard .journeyBtns {
+  margin-top: 50px;
+}
+
+.dashboard .journeyBtns .journeyBtn {
+  width: 145px;
+  height: 145px;
+  font-size: 20px;
+}
+
+.dashboard .journeyBtns .journeyBtn::first-letter {
+  font-size: 200%;
+}
+
+.dashboard .journeyBtns .journeyBtn:nth-child(2) {
+  margin-left: 80px;
 }
