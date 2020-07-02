@@ -1,5 +1,10 @@
 import React from 'react'
-export default function Header(){
-    return <div>hello
-    </div>
+import './common.css'
+
+export default function Header() {
+    return (
+        <div className="header">
+            API Hackathon
+        </div>
+    )
 }

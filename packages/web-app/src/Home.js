@@ -10,6 +10,8 @@ function Home(props) {
   },[])
   return (
     <div>
+      This is {props.message} from redux store
+      <button onClick={() => props.getInitialData('Dispatch hello')}>Click Me</button>
      Home component 
      <Loading />
      <pre>{(JSON.stringify(props.data,null,4))}</pre>
