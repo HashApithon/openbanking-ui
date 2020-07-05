@@ -1,32 +1,35 @@
-import React,{useEffect} from 'react'
-import createRequest from '@openbanking/ui-data/src/services/request'
+import React, { useEffect } from 'react'
+import {getToken} from '@openbanking/ui-data/lib/services/authService'
+import {parse} from 'query-string'
 
 import { connect } from 'react-redux';
-import Loading from '@openbanking/ui-common/lib/Loading';
+import { Redirect } from 'react-router';
 
 function Home(props) {
+
+  const {code} = parse(window.location.hash.substring(1))
+  props.getToken(code)
+
   useEffect(()=>{
-    props.getInitialData()
-  },[])
+    if(props.token){
+      return <Redirect to="/accounts" />
+    }
+  },[props.token])
+
   return (
     <div>
-      This is {props.message} from redux store
-      <button onClick={() => props.getInitialData('Dispatch hello')}>Click Me</button>
-     Home component 
-     <Loading />
-     <pre>{(JSON.stringify(props.data,null,4))}</pre>
     </div>
   );
 }
 
 const mapStateToProps = state => ({
-    data: state.app.data
+    token:state.user.token
 });
 
 
 const mapDispatchToProps = dispatch => ({
-    getInitialData:()=>
-        createRequest(dispatch,'todos/1','get')
+    getToken:(code)=>
+      getToken(dispatch, code)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

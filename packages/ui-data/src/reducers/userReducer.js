@@ -1,14 +1,16 @@
-import { LOGOUT,LOGIN } from '../actionCreators/user'
+import { LOGOUT,SET_ACCESS_TOKEN } from '../actionCreators/user'
 
 const initialState = {
-    user:null
+    token:null
 }
 function appReducer(state = initialState, action) {
     switch (action.type) {
         case LOGOUT:
-            return { ...state, user:null }
-        case LOGIN:
-            return {...state,user:action.user}
+            localStorage.removeItem('token')
+            return { ...state, token:null }
+        case SET_ACCESS_TOKEN:
+            localStorage.setItem('token',token)
+            return {...state,token:action.user}
         default:
             return state
 

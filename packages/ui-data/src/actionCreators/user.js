@@ -1,2 +1,2 @@
 export const LOGOUT = 'LOGOUT'
-export const LOGIN = 'LOGIN'
+export const SET_ACCESS_TOKEN = 'SET_ACCESS_TOKEN'

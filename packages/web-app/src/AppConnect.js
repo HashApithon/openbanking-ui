@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     getInitialData:(message)=>
-        dispatch(initializeData(message))
+        dispatch(initializeData(message)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
