@@ -3,13 +3,23 @@
   "version": "0.0.1",
   "description": "Open Banking Aggregator UI",
   "devDependencies": {
+    "husky": "^4.2.5",
     "json-server": "^0.16.1",
     "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5"
   },
   "scripts": {
     "start": "lerna run --scope @openbanking/web-app --include-dependencies --parallel start",
     "mock-server": "json-server --watch db.json --port 3001",
     "postinstall": "lerna bootstrap --hoist"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged":{
+    "**/*.{js,html,css,json}":"prettier --write"  
   }
 }
