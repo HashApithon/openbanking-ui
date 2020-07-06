@@ -1,19 +1,33 @@
 import axios from 'axios'
 import { setRequestInterceptor } from './request-interceptor'
-import { setData } from '../actions/app';
-import { setError, setLoader } from '../actions/common';
+import { setData } from '../actions/app'
+import { setError, setLoader } from '../actions/common'
 
-const base_url = 'https://jsonplaceholder.typicode.com/'
+const base_url = 'http://localhost:3001'
 
-setRequestInterceptor();
+setRequestInterceptor()
 
-export default function createRequest(dispatch, endpoint,method='get',data={},headers={}){
+export default function createRequest(
+    dispatch,
+    endpoint,
+    method = 'get',
+    data = {},
+    headers = {},
+    callbackFn
+) {
     dispatch(setLoader(true))
-    axios(base_url + endpoint, data, headers).then(function(response){
-        dispatch(setLoader(false))
-        dispatch(setData(response.data))
-    }).catch(function(error){
-        dispatch(setLoader(false))
-        dispatch(setError(error))
+    axios({
+        url: base_url + endpoint,
+        method,
+        data: data,
+        headers,
     })
+        .then(function (response) {
+            dispatch(setLoader(false))
+            callbackFn(response.data)
+        })
+        .catch(function (error) {
+            dispatch(setLoader(false))
+            dispatch(setError(error))
+        })
 }

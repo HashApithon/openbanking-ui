@@ -1,10 +1,9 @@
-import app from './appReducer';
-import user from './userReducer';
-import common from './commonReducer';
+import app from './appReducer'
+import auth from './authReducer'
+import common from './commonReducer'
 
 export default {
     app,
-    user,
-    common
-    
+    auth,
+    common,
 }

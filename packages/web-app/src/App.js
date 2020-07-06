@@ -3,7 +3,7 @@ import { Route, BrowserRouter } from 'react-router-dom'
 import Header from '@openbanking/ui-common/lib/Header'
 import ErrorBoundary from '@openbanking/ui-common/lib/Error'
 import Loading from '@openbanking/ui-common/lib/Loading'
-import Home from './Home'
+import Accounts from './Accounts'
 import Dashboard from './Dashboard'
 import './App.css'
 
@@ -15,8 +15,8 @@ function App(props) {
                 <Header />
                 <div className="section-content">
                     <BrowserRouter>
-                        <Route path="/" component={Dashboard} />
-                        <Route path="/home" component={Home} />
+                        <Route exact path="/" component={Dashboard} />
+                        <Route exact path="/accounts" component={Accounts} />
                     </BrowserRouter>
                 </div>
             </div>
