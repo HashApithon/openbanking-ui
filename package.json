@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "Open Banking Aggregator UI",
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "json-server": "^0.16.1",
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5"
   },
   "scripts": {
     "start": "lerna run --scope @openbanking/web-app --include-dependencies --parallel start",
+    "mock-server": "json-server --watch db.json --port 3001",
     "postinstall": "lerna bootstrap --hoist"
   }
 }
