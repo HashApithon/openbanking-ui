@@ -1,8 +1,27 @@
 {
-  "accounts": [
-    {
-      "accountId": 1,
-      "name": "Jon Bonjovi"
-    }
-  ]
+    "token": {
+        "access_token": "eYJhGjhdgJUfsanhgshdUFKKKK",
+        "expires_in": 300,
+        "id_token": "eYJhGjhdgJUfsanhgshdUFKKKK",
+        "refresh_token": "eYJhGjhdgJUfsanhgshdUFKKKK",
+        "scope": "accounts",
+        "token_type": "Bearer"
+    },
+    "accounts": [
+        {
+            "Account": [
+                {
+                    "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                    "Name": "Debit Account",
+                    "Identification": "500024373247324"
+                }
+            ],
+            "AccountId": "a0138i3-67h3-3y37-bh73-h7g55678gh677",
+            "AccountSubType": "CurrentAccount",
+            "AccountType": "Personal",
+            "Currency": "GBP",
+            "Description": "Personal",
+            "Nickname": "Debit Account"
+        }
+    ]
 }

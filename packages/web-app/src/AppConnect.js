@@ -1,16 +1,14 @@
-import { connect } from 'react-redux';
-import App from './App';
-import {initializeData} from '@openbanking/ui-data/src/actions/app'
+import { connect } from 'react-redux'
+import App from './App'
+import { initializeData } from '@openbanking/ui-data/lib/actions/app'
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
     message: state.app.message,
-    loading: state.common.loading
-});
+    loading: state.common.loading,
+})
 
+const mapDispatchToProps = (dispatch) => ({
+    getInitialData: (message) => dispatch(initializeData(message)),
+})
 
-const mapDispatchToProps = dispatch => ({
-    getInitialData:(message)=>
-        dispatch(initializeData(message))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App)

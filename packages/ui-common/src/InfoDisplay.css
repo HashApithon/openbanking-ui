@@ -1,0 +1,12 @@
+.formattedData {
+    background-color: #dcece7;
+    padding: 15px;
+}
+
+.infoContainer h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #645f50;
+    margin-bottom: 30px;
+    text-align: center;
+}
