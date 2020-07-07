@@ -1,6 +1,11 @@
 .formattedData {
-    background-color: #dcece7;
+    background-color: black;
     padding: 15px;
+}
+
+.formattedData pre {
+    color: white;
+    text-align: left;
 }
 
 .infoContainer h2 {

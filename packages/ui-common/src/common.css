@@ -6,22 +6,83 @@
     text-align: center;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     z-index: 999;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(255,255,255,0.8)
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .loading:before {
     content: '';
     top: 50%;
-    left:50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     position: fixed;
     background: url('./assets/loader.svg') no-repeat;
-  }
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.errorContainer {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.notFound {
+    color: #49c566;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.notFound h2 {
+    font-size: 32px;
+}
+
+.notFound a {
+    color: white;
+    background-color: #49c566;
+    padding: 10px 25px;
+    display: block;
+}
+
+.errorNotification {
+    min-height: 100px;
+    margin: 20px 40px;
+}
+
+.errorNotification .alert-danger {
+    border-radius: 0;
+    border: 2px solid #e84151;
+    background-color: transparent;
+    color: #d73e4d;
+}
+
+.errorBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.errorBox::before {
+    content: '';
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-right: 12px;
+    background: url(./assets/error.svg) no-repeat;
+}
+.errorNotification p {
+    color: #545b62;
+}

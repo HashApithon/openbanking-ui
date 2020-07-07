@@ -6,18 +6,20 @@ import './Accounts.css'
 
 function Accounts(props) {
     return (
-        <div className="apiContainer">
-            <div className="btnContainer">
-                <h2>AISP Information</h2>
-                <button
-                    className="buttonLinks"
-                    onClick={() => props.getAcccountList()}
-                >
-                    Get Account List
-                </button>
-            </div>
-            <div className="displayInfo">
-                <InfoDisplay data={props.data} />
+        <div className="mainContainer">
+            <h2 className="pageTitle">AISP Information</h2>
+            <div className="apiContainer">
+                <div className="btnContainer">
+                    <button
+                        className="buttonLinks"
+                        onClick={() => props.getAcccountList()}
+                    >
+                        Get Account List
+                    </button>
+                </div>
+                <div className="displayInfo">
+                    <InfoDisplay data={props.data} />
+                </div>
             </div>
         </div>
     )

@@ -18,7 +18,7 @@
     margin-right: 30px;
 }
 
-.btnContainer h2 {
+.pageTitle {
     font-size: 24px;
     line-height: 24px;
     color: #645f50;
@@ -39,4 +39,9 @@
 
 .displayInfo {
     flex-basis: 50%;
+}
+
+.mainContainer {
+    margin-top: 20px;
+    text-align: center;
 }
