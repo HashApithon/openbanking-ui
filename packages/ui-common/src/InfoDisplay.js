@@ -7,7 +7,6 @@ export default function InfoDisplay({ data = {} }) {
     }
     return (
         <div className="infoContainer">
-            <h2>Results:</h2>
             <div className="formattedData">
                 <pre>{JSON.stringify(data, null, 4)}</pre>
             </div>
