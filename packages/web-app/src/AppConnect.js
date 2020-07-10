@@ -1,4 +1,4 @@
-import { connect } from 'react-redux'
+import { connect, useSelector, useDispatch } from 'react-redux'
 import App from './App'
 
 const mapStateToProps = (state) => ({
@@ -8,4 +8,10 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({})
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+//export default connect(mapStateToProps, mapDispatchToProps)(App)
+
+export const App = () => {
+    const loading = useSelector(state => state.common.loading);
+    const error = useSelector(state => state.common.error);
+    const dispatch = useDispatch();
+}

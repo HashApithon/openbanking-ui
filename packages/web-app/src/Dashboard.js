@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
-import { getAccessToken } from '@openbanking/ui-data/lib/services/auth-service'
 import { Redirect } from 'react-router'
+import { useSelector, useDispatch } from 'react-redux'
+import { getAccessToken } from '@openbanking/ui-data/lib/services/auth-service'
 
-function Dashboard(props) {
+const Dashboard = () => {
+    const token = useSelector(state => state.auth.token);
+    const dispatch = useDispatch();
     const [journeyType, setJourneyType] = useState('accounts')
 
     function setType(type) {
         setJourneyType(type)
-        props.getAccessToken(type)
+        getAccessToken(dispatch)
     }
 
-    if (props.token) {
+    if (token) {
         return <Redirect to={`/${journeyType}`} />
     }
+
     return (
         <div className="dashboard">
             <div className="container">
@@ -45,14 +48,7 @@ function Dashboard(props) {
             </div>
         </div>
     )
+
 }
 
-const mapStateToProps = (state) => ({
-    token: state.auth.token,
-})
-
-const mapDispatchToProps = (dispatch) => ({
-    getAccessToken: () => getAccessToken(dispatch),
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
+export default Dashboard

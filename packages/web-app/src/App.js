@@ -1,23 +1,27 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import Header from '@openbanking/ui-common/lib/Header'
 import ErrorBoundary from '@openbanking/ui-common/lib/ErrorBoundary'
 import Loading from '@openbanking/ui-common/lib/Loading'
+import Error from '@openbanking/ui-common/lib/Error'
+import NotFound from '@openbanking/ui-common/lib/NotFound'
 import Accounts from './Accounts'
 import Dashboard from './Dashboard'
 import PrivateRoute from './PrivateRoute'
-import './App.css'
 import Payments from './Payments'
-import Error from '@openbanking/ui-common/lib/Error'
-import NotFound from '@openbanking/ui-common/lib/NotFound'
+import './App.css'
 
-function App(props) {
+const App = () => {
+    const loading = useSelector(state => state.common.loading);
+    const error = useSelector(state => state.common.error);
+
     return (
         <div className="app">
-            {props.loading && <Loading />}
+            {loading && <Loading />}
             <Header />
             <ErrorBoundary>
-                {props.error && <Error />}
+                {error && <Error />}
                 <div className="section-content">
                     <BrowserRouter>
                         <Switch>
