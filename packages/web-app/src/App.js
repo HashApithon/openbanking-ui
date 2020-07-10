@@ -5,6 +5,8 @@ import ErrorBoundary from '@openbanking/ui-common/lib/ErrorBoundary'
 import Loading from '@openbanking/ui-common/lib/Loading'
 import Accounts from './Accounts'
 import Dashboard from './Dashboard'
+import Loader from './Loader'
+import Redirecting from './Redirecting'
 import PrivateRoute from './PrivateRoute'
 import './App.css'
 import Payments from './Payments'
@@ -22,6 +24,10 @@ function App(props) {
                     <BrowserRouter>
                         <Switch>
                             <Route exact path="/" component={Dashboard} />
+                            <Route exact path="/loading" component={Loader} />
+                            <Route exact path="/redirecting" render={()=>
+                                <Redirecting />
+                            } />
                             <PrivateRoute
                                 exact
                                 path="/accounts"
