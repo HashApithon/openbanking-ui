@@ -8,13 +8,15 @@ import Error from '@openbanking/ui-common/lib/Error'
 import NotFound from '@openbanking/ui-common/lib/NotFound'
 import Accounts from './Accounts'
 import Dashboard from './Dashboard'
+import Loader from './Loader'
+import Redirecting from './Redirecting'
 import PrivateRoute from './PrivateRoute'
 import Payments from './Payments'
 import './App.css'
 
 const App = () => {
-    const loading = useSelector(state => state.common.loading);
-    const error = useSelector(state => state.common.error);
+    const loading = useSelector((state) => state.common.loading)
+    const error = useSelector((state) => state.common.error)
 
     return (
         <div className="app">
@@ -26,6 +28,12 @@ const App = () => {
                     <BrowserRouter>
                         <Switch>
                             <Route exact path="/" component={Dashboard} />
+                            <Route exact path="/loading" component={Loader} />
+                            <Route
+                                exact
+                                path="/redirecting"
+                                render={() => <Redirecting />}
+                            />
                             <PrivateRoute
                                 exact
                                 path="/accounts"

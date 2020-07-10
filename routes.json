@@ -1,0 +1,9 @@
+{
+    "/api/*": "/$1",
+    "/accounts/:id": "/account",
+    "/accounts/:id/transactions": "/transactions",
+    "/accounts/:id/direct-debits": "/direct-debits",
+    "/accounts/:id/balances": "/balances",
+    "/accounts/:id/standing-orders": "/standing-orders",
+    "/accounts/:id/products": "/products"
+}

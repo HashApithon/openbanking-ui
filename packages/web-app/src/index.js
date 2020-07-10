@@ -1,21 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from "react-redux";
-import './index.css';
-import {createBrowserHistory} from 'history';
-
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { createBrowserHistory } from 'history'
 import store from '@openbanking/ui-data/src/store'
-import networkService from '@openbanking/ui-data/src/services/network-service';
+import networkService from '@openbanking/ui-data/src/services/network-service'
+import App from './App'
+import './index.css'
 
-const history = createBrowserHistory();
-networkService.setupInterceptors(store, history);
+const history = createBrowserHistory()
+networkService.setupInterceptors(store, history)
 
 ReactDOM.render(
-  <Provider store = {store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Provider>,
-  document.getElementById('root')
-);
+    <Provider store={store}>
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    </Provider>,
+    document.getElementById('root')
+)

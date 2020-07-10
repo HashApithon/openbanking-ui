@@ -1,11 +1,10 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import InfoDisplay from '@openbanking/ui-common/lib/InfoDisplay'
 import './Accounts.css'
 
 const Payments = () => {
-    const data = useSelector(state => state.app.data);
-    const dispatch = useDispatch();
+    const data = useSelector((state) => state.app.data)
 
     return (
         <div className="apiContainer">
