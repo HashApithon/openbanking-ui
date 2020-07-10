@@ -37,6 +37,10 @@
     text-decoration: none;
 }
 
+.buttonLinks:not(:first-child){
+    margin-top:15px;
+}
+
 .displayInfo {
     flex-basis: 50%;
 }

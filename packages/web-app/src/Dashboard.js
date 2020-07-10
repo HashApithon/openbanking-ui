@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { initializeJourney } from '@openbanking/ui-data/lib/services/auth-service'
+import { initializeJourney } from '@openbanking/ui-data/src/services/auth-service'
 
 function Dashboard(props) {
 
