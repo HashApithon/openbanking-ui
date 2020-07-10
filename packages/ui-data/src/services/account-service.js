@@ -6,3 +6,39 @@ export function getAccountList(dispatch) {
         dispatch(setData(response))
     })
 }
+
+export function getAccountById(dispatch,accountId) {
+    createRequest(dispatch, `/accounts/${accountId}`, 'GET', null, {}, function (response) {
+        dispatch(setData(response))
+    })
+}
+
+export function getAccountBalances(dispatch,accountId) {
+    createRequest(dispatch, `/accounts/${accountId}/balances`, 'GET', null, {}, function (response) {
+        dispatch(setData(response))
+    })
+}
+
+export function getAccountTransactions(dispatch,accountId) {
+    createRequest(dispatch, `/accounts/${accountId}/transactions`, 'GET', null, {}, function (response) {
+        dispatch(setData(response))
+    })
+}
+
+export function getAccountDirectDebits(dispatch,accountId) {
+    createRequest(dispatch, `/accounts/${accountId}/direct-debits`, 'GET', null, {}, function (response) {
+        dispatch(setData(response))
+    })
+}
+
+export function getAccountStandingOrders(dispatch,accountId) {
+    createRequest(dispatch, `/accounts/${accountId}/standing-orders`, 'GET', null, {}, function (response) {
+        dispatch(setData(response))
+    })
+}
+
+export function getAccountProducts(dispatch,params) {
+    createRequest(dispatch, '/products', 'GET', params, {}, function (response) {
+        dispatch(setData(response))
+    })
+}
