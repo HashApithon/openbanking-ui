@@ -13,7 +13,7 @@ export default {
             console.log("EXPIRED TOKEN!");
             localStorage.clear();
             store.dispatch(logout())
-            history.push('/login')
+            history.push('/')
         }
         return Promise.reject(error);
     });

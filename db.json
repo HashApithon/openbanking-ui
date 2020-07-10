@@ -3,7 +3,12 @@
     "authorizationUrl": "http://localhost:4000/loading"
   },
   "token": {
-    "code": "Njugff123Ahejkf8hbkkjjh"
+    "access_token": "eYJhGjhdgJUfsanhgshdUFKKKK",
+    "expires_in": 300,
+    "id_token": "eYJhGjhdgJUfsanhgshdUFKKKK",
+    "refresh_token": "eYJhGjhdgJUfsanhgshdUFKKKK",
+    "scope": "accounts",
+    "token_type": "Bearer"
   },
   "accounts": [
     {
