@@ -22,7 +22,7 @@ export function initializeJourney(dispatch, type) {
             uuidv5('http://openbanking.apithon', uuidv5.URL)
         )
 
-    createRequest(dispatch, type + '/init', 'GET', null, {}, function (
+    createRequest(dispatch, `/${type}/init`, 'GET', null, {}, function (
         response
     ) {
         sessionStorage.setItem('type', type)

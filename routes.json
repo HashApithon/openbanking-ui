@@ -1,5 +1,6 @@
 {
     "/api/*": "/$1",
+    "/:type/init": "/init",
     "/accounts/:id": "/account",
     "/accounts/:id/transactions": "/transactions",
     "/accounts/:id/direct-debits": "/direct-debits",
