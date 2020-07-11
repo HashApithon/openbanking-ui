@@ -1,6 +1,6 @@
 {
     "init": {
-        "authorizationUrl": "http://localhost:4000/loading"
+        "authorizationUrl": "/loading"
     },
     "token": {
         "code": "Njugff123Ahejkf8hbkkjjh"
