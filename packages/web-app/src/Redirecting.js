@@ -6,17 +6,15 @@ import { getAccessToken } from '@openbanking/ui-data/lib/services/auth-service'
 import Loading from '@openbanking/ui-common/lib/Loading'
 
 const Redirecting = () => {
-    const journeyType = useSelector(sessionStorage.getItem('type'))
+    const journeyType = useSelector((state) => sessionStorage.getItem('type'))
     const dispatch = useDispatch()
 
     // dont allow user to access this page directly
     if (!journeyType) {
         return <Redirect to="/" />
     } else {
-        if (journeyType) {
-            const { code } = parse(window.location.hash.substring(1))
-            getAccessToken(dispatch, code, journeyType)
-        }
+        const { code } = parse(window.location.hash.substring(1))
+        getAccessToken(dispatch, code, journeyType)
     }
     return <Loading />
 }

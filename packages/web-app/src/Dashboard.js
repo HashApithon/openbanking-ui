@@ -6,7 +6,7 @@ const Dashboard = () => {
     const dispatch = useDispatch()
 
     function setType(type) {
-        initializeJourney(dispatch)
+        initializeJourney(dispatch, type)
     }
 
     return (
