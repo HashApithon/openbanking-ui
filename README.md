@@ -53,7 +53,7 @@ This will stub the rest api calls and return the mock response.
 
 #### Connecting with sdk
 
-Download and setup the sdk code from the [url]()
+Download and setup the sdk code from the [url](https://github.com/HashApithon/openbanking-java-sdk)
 
 ### Getting familiar with open banking related terms
 
