@@ -1,255 +1,255 @@
 {
-  "init": {
-    "authorizationUrl": "http://localhost:4000/loading"
-  },
-  "token": {
-    "code": "Njugff123Ahejkf8hbkkjjh"
-  },
-  "accounts": {
-    "Data": {
-      "Account": [
-        {
-          "AccountId": "string",
-          "Currency": "string",
-          "AccountType": "Business",
-          "AccountSubType": "ChargeCard",
-          "Description": "string",
-          "Nickname": "string",
-          "Account": {
-            "SchemeName": "UK.OBIE.IBAN",
-            "Identification": "string",
-            "SecondaryIdentification": "string",
-            "Name": "string"
-          },
-          "Servicer": {
-            "SchemeName": "UK.OBIE.BICFI",
-            "Identification": "string"
-          }
+    "init": {
+        "authorizationUrl": "/loading"
+    },
+    "token": {
+        "code": "Njugff123Ahejkf8hbkkjjh"
+    },
+    "accounts": {
+        "Data": {
+            "Account": [
+                {
+                    "AccountId": "string",
+                    "Currency": "string",
+                    "AccountType": "Business",
+                    "AccountSubType": "ChargeCard",
+                    "Description": "string",
+                    "Nickname": "string",
+                    "Account": {
+                        "SchemeName": "UK.OBIE.IBAN",
+                        "Identification": "string",
+                        "SecondaryIdentification": "string",
+                        "Name": "string"
+                    },
+                    "Servicer": {
+                        "SchemeName": "UK.OBIE.BICFI",
+                        "Identification": "string"
+                    }
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0
         }
-      ]
     },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0
-    }
-  },
-  "account": {
-    "Data": {
-      "Account": [
-        {
-          "AccountId": "string",
-          "Currency": "string",
-          "AccountType": "Business",
-          "AccountSubType": "ChargeCard",
-          "Description": "string",
-          "Nickname": "string",
-          "Account": {
-            "SchemeName": "UK.OBIE.IBAN",
-            "Identification": "string",
-            "SecondaryIdentification": "string",
-            "Name": "string"
-          },
-          "Servicer": {
-            "SchemeName": "UK.OBIE.BICFI",
-            "Identification": "string"
-          }
+    "account": {
+        "Data": {
+            "Account": [
+                {
+                    "AccountId": "string",
+                    "Currency": "string",
+                    "AccountType": "Business",
+                    "AccountSubType": "ChargeCard",
+                    "Description": "string",
+                    "Nickname": "string",
+                    "Account": {
+                        "SchemeName": "UK.OBIE.IBAN",
+                        "Identification": "string",
+                        "SecondaryIdentification": "string",
+                        "Name": "string"
+                    },
+                    "Servicer": {
+                        "SchemeName": "UK.OBIE.BICFI",
+                        "Identification": "string"
+                    }
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0
         }
-      ]
     },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0
-    }
-  },
-  "transactions": {
-    "Data": {
-      "Transaction": [
-        {
-          "AccountId": "string",
-          "TransactionId": "string",
-          "Amount": {
-            "Amount": "string",
-            "Currency": "string"
-          },
-          "CreditDebitIndicator": "Credit",
-          "Status": "Booked",
-          "BookingDateTime": "2020-07-10T13:32:08.164Z",
-          "ValueDateTime": "2020-07-10T13:32:08.164Z",
-          "TransactionInformation": "string",
-          "AddressLine": "string",
-          "BankTransactionCode": {
-            "Code": "string",
-            "SubCode": "string"
-          },
-          "ProprietaryBankTransactionCode": {
-            "Code": "string",
-            "Issuer": "string"
-          },
-          "Balance": {
-            "Amount": {
-              "Amount": "string",
-              "Currency": "string"
-            },
-            "CreditDebitIndicator": "Credit",
-            "Type": "ClosingAvailable"
-          },
-          "MerchantDetails": {
-            "MerchantName": "string",
-            "MerchantCategoryCode": "string"
-          }
+    "transactions": {
+        "Data": {
+            "Transaction": [
+                {
+                    "AccountId": "string",
+                    "TransactionId": "string",
+                    "Amount": {
+                        "Amount": "string",
+                        "Currency": "string"
+                    },
+                    "CreditDebitIndicator": "Credit",
+                    "Status": "Booked",
+                    "BookingDateTime": "2020-07-10T13:32:08.164Z",
+                    "ValueDateTime": "2020-07-10T13:32:08.164Z",
+                    "TransactionInformation": "string",
+                    "AddressLine": "string",
+                    "BankTransactionCode": {
+                        "Code": "string",
+                        "SubCode": "string"
+                    },
+                    "ProprietaryBankTransactionCode": {
+                        "Code": "string",
+                        "Issuer": "string"
+                    },
+                    "Balance": {
+                        "Amount": {
+                            "Amount": "string",
+                            "Currency": "string"
+                        },
+                        "CreditDebitIndicator": "Credit",
+                        "Type": "ClosingAvailable"
+                    },
+                    "MerchantDetails": {
+                        "MerchantName": "string",
+                        "MerchantCategoryCode": "string"
+                    }
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0
         }
-      ]
     },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0
-    }
-  },
-  "balances": {
-    "Data": {
-      "Balance": [
-        {
-          "AccountId": "string",
-          "Amount": {
-            "Amount": "string",
-            "Currency": "string"
-          },
-          "CreditDebitIndicator": "Credit",
-          "Type": "ClosingAvailable",
-          "DateTime": "2020-07-10T13:33:02.328Z",
-          "CreditLine": [
-            {
-              "Included": true,
-              "Amount": {
-                "Amount": "string",
-                "Currency": "string"
-              },
-              "Type": "Pre-Agreed"
-            }
-          ]
+    "balances": {
+        "Data": {
+            "Balance": [
+                {
+                    "AccountId": "string",
+                    "Amount": {
+                        "Amount": "string",
+                        "Currency": "string"
+                    },
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "ClosingAvailable",
+                    "DateTime": "2020-07-10T13:33:02.328Z",
+                    "CreditLine": [
+                        {
+                            "Included": true,
+                            "Amount": {
+                                "Amount": "string",
+                                "Currency": "string"
+                            },
+                            "Type": "Pre-Agreed"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0
         }
-      ]
     },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0
-    }
-  },
-  "direct-debits": {
-    "Data": {
-      "DirectDebit": [
-        {
-          "AccountId": "string",
-          "MandateIdentification": "string",
-          "DirectDebitStatusCode": "Active",
-          "Name": "string",
-          "PreviousPaymentDateTime": "2020-07-10T13:33:39.229Z",
-          "PreviousPaymentAmount": {
-            "Amount": "string",
-            "Currency": "string"
-          }
+    "direct-debits": {
+        "Data": {
+            "DirectDebit": [
+                {
+                    "AccountId": "string",
+                    "MandateIdentification": "string",
+                    "DirectDebitStatusCode": "Active",
+                    "Name": "string",
+                    "PreviousPaymentDateTime": "2020-07-10T13:33:39.229Z",
+                    "PreviousPaymentAmount": {
+                        "Amount": "string",
+                        "Currency": "string"
+                    }
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0,
+            "FirstAvailableDateTime": "2020-07-10T13:33:39.230Z",
+            "LastAvailableDateTime": "2020-07-10T13:33:39.230Z"
         }
-      ]
     },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0,
-      "FirstAvailableDateTime": "2020-07-10T13:33:39.230Z",
-      "LastAvailableDateTime": "2020-07-10T13:33:39.230Z"
-    }
-  },
-  "standing-orders": {
-    "Data": {
-      "StandingOrder": [
-        {
-          "AccountId": "string",
-          "Frequency": "string",
-          "Reference": "string",
-          "FirstPaymentDateTime": "2020-07-10T13:34:22.336Z",
-          "NextPaymentDateTime": "2020-07-10T13:34:22.336Z",
-          "FinalPaymentDateTime": "2020-07-10T13:34:22.336Z",
-          "FirstPaymentAmount": {
-            "Amount": "string",
-            "Currency": "string"
-          },
-          "NextPaymentAmount": {
-            "Amount": "string",
-            "Currency": "string"
-          },
-          "FinalPaymentAmount": {
-            "Amount": "string",
-            "Currency": "string"
-          },
-          "StandingOrderStatusCode": "Active",
-          "CreditorAgent": {
-            "SchemeName": "UK.OBIE.BICFI",
-            "Identification": "string"
-          },
-          "CreditorAccount": {
-            "SchemeName": "UK.OBIE.IBAN",
-            "Identification": "string",
-            "Name": "string"
-          }
+    "standing-orders": {
+        "Data": {
+            "StandingOrder": [
+                {
+                    "AccountId": "string",
+                    "Frequency": "string",
+                    "Reference": "string",
+                    "FirstPaymentDateTime": "2020-07-10T13:34:22.336Z",
+                    "NextPaymentDateTime": "2020-07-10T13:34:22.336Z",
+                    "FinalPaymentDateTime": "2020-07-10T13:34:22.336Z",
+                    "FirstPaymentAmount": {
+                        "Amount": "string",
+                        "Currency": "string"
+                    },
+                    "NextPaymentAmount": {
+                        "Amount": "string",
+                        "Currency": "string"
+                    },
+                    "FinalPaymentAmount": {
+                        "Amount": "string",
+                        "Currency": "string"
+                    },
+                    "StandingOrderStatusCode": "Active",
+                    "CreditorAgent": {
+                        "SchemeName": "UK.OBIE.BICFI",
+                        "Identification": "string"
+                    },
+                    "CreditorAccount": {
+                        "SchemeName": "UK.OBIE.IBAN",
+                        "Identification": "string",
+                        "Name": "string"
+                    }
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0,
+            "FirstAvailableDateTime": "2020-07-10T13:34:22.336Z",
+            "LastAvailableDateTime": "2020-07-10T13:34:22.336Z"
         }
-      ]
     },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0,
-      "FirstAvailableDateTime": "2020-07-10T13:34:22.336Z",
-      "LastAvailableDateTime": "2020-07-10T13:34:22.336Z"
-    }
-  },
-  "products": {
-    "Data": {
-      "Product": [
-        {
-          "AccountId": "string",
-          "ProductId": "string",
-          "ProductType": "PersonalCurrentAccount",
-          "MarketingStateId": "string",
-          "SecondaryProductId": "string",
-          "OtherProductType": {
-            "Name": "string",
-            "Description": "string"
-          },
-          "ProductName": "string"
+    "products": {
+        "Data": {
+            "Product": [
+                {
+                    "AccountId": "string",
+                    "ProductId": "string",
+                    "ProductType": "PersonalCurrentAccount",
+                    "MarketingStateId": "string",
+                    "SecondaryProductId": "string",
+                    "OtherProductType": {
+                        "Name": "string",
+                        "Description": "string"
+                    },
+                    "ProductName": "string"
+                }
+            ]
+        },
+        "Links": {
+            "Self": "string",
+            "Prev": "string",
+            "Next": "string"
+        },
+        "Meta": {
+            "TotalPages": 0,
+            "FirstAvailableDateTime": "2020-07-10T13:36:43.573Z",
+            "LastAvailableDateTime": "2020-07-10T13:36:43.573Z"
         }
-      ]
-    },
-    "Links": {
-      "Self": "string",
-      "Prev": "string",
-      "Next": "string"
-    },
-    "Meta": {
-      "TotalPages": 0,
-      "FirstAvailableDateTime": "2020-07-10T13:36:43.573Z",
-      "LastAvailableDateTime": "2020-07-10T13:36:43.573Z"
     }
-  }
 }
