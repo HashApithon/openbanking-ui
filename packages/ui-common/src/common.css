@@ -4,6 +4,13 @@
     font-size: 20px;
     padding: 0 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header h2 {
+    margin-bottom: 0;
+    align-self: center;
 }
 
 .overlay {
