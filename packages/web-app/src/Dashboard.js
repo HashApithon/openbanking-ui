@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { initializeJourney } from '@openbanking/ui-data/src/services/auth-service'
 
 function Dashboard(props) {
-
     function setType(type) {
         props.initializeJourney(type)
     }
@@ -23,13 +22,13 @@ function Dashboard(props) {
                         <div className="journeyBtns">
                             <button
                                 className="journeyBtn"
-                                onClick={() => setType('accounts')}
+                                onClick={() => setType('aisp')}
                             >
                                 Account Information Service Provider (AISP)
                             </button>
                             <button
                                 className="journeyBtn"
-                                onClick={() => setType('payments')}
+                                onClick={() => setType('pisp')}
                             >
                                 Payment Initiation Service Provider (PISP)
                             </button>
@@ -42,7 +41,7 @@ function Dashboard(props) {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    initializeJourney: (type) => initializeJourney(dispatch,type),
+    initializeJourney: (type) => initializeJourney(dispatch, type),
 })
 
 export default connect(null, mapDispatchToProps)(Dashboard)
