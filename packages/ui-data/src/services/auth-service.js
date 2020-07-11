@@ -1,5 +1,6 @@
 import createRequest from './request'
 import { setAccessToken } from './../actions/auth'
+import { v5 as uuidv5 } from 'uuid'
 
 export function getAccessToken(dispatch, code, type) {
     createRequest(dispatch, '/token', 'POST', { code }, {}, function (
@@ -14,7 +15,16 @@ export function getAccessToken(dispatch, code, type) {
 }
 
 export function initializeJourney(dispatch, type) {
-    createRequest(dispatch, '/init', 'GET', null, {}, function (response) {
+    const sessionId = sessionStorage.getItem('session_id')
+    if (!sessionId)
+        sessionStorage.setItem(
+            'session_id',
+            uuidv5('http://openbanking.apithon', uuidv5.URL)
+        )
+
+    createRequest(dispatch, type + '/init', 'GET', null, {}, function (
+        response
+    ) {
         sessionStorage.setItem('type', type)
         document.location = response.authorizationUrl
     })

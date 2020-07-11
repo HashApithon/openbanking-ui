@@ -24,13 +24,13 @@ const Dashboard = () => {
                         <div className="journeyBtns">
                             <button
                                 className="journeyBtn"
-                                onClick={() => setType('accounts')}
+                                onClick={() => setType('aisp')}
                             >
                                 Account Information Service Provider (AISP)
                             </button>
                             <button
                                 className="journeyBtn"
-                                onClick={() => setType('payments')}
+                                onClick={() => setType('pisp')}
                             >
                                 Payment Initiation Service Provider (PISP)
                             </button>

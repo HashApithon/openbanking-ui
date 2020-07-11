@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
