@@ -6,5 +6,4 @@
     "/accounts/:id/balances": "/balances",
     "/accounts/:id/standing-orders": "/standing-orders",
     "/accounts/:id/products": "/products"
-
 }

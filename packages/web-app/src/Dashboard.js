@@ -1,10 +1,12 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { initializeJourney } from '@openbanking/ui-data/src/services/auth-service'
 
-function Dashboard(props) {
+const Dashboard = () => {
+    const dispatch = useDispatch()
+
     function setType(type) {
-        props.initializeJourney(type)
+        initializeJourney(dispatch, type)
     }
 
     return (
@@ -40,8 +42,4 @@ function Dashboard(props) {
     )
 }
 
-const mapDispatchToProps = (dispatch) => ({
-    initializeJourney: (type) => initializeJourney(dispatch, type),
-})
-
-export default connect(null, mapDispatchToProps)(Dashboard)
+export default Dashboard
