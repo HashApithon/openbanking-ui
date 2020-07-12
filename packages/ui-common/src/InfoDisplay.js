@@ -1,6 +1,7 @@
 import React from 'react'
 import './InfoDisplay.css'
 
+//display formatted json data
 export default function InfoDisplay({ data = {} }) {
     if (!data) {
         return null

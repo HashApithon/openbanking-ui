@@ -14,6 +14,8 @@ import PrivateRoute from './PrivateRoute'
 import Payments from './Payments'
 import './App.css'
 
+// views
+
 const App = () => {
     const loading = useSelector((state) => state.common.loading)
     const error = useSelector((state) => state.common.error)

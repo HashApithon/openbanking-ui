@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { initializeJourney } from '@openbanking/ui-data/lib/services/auth-service'
 
 const Dashboard = () => {
     const dispatch = useDispatch()
 
+    useEffect(()=>{
+        //remove access_token to start journey again
+        localStorage.removeItem('token')
+        localStorage.removeItem('refresh_token')
+    },[])
+
     function setType(type) {
+        // initialize aisp/pisp journey to get authorization URL
         initializeJourney(dispatch, type)
     }
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import loader from './assets/loader.svg'
 import './common.css'
 
+// loading overlay
 export default function Loading(){
     return <div className="overlay">
             <div className="loading">

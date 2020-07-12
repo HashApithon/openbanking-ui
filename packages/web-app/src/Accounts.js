@@ -15,6 +15,7 @@ import './Accounts.css'
 // stubbed account id configured in .env
 const ACCOUNT_ID = process.env.REACT_APP_ACCOUNT_ID
 
+//accounts api list
 const Accounts = () => {
     const data = useSelector((state) => state.app.data)
     const dispatch = useDispatch()
