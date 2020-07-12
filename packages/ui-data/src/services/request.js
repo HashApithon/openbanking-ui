@@ -3,7 +3,7 @@ import { setRequestInterceptor } from './request-interceptor'
 import { setData } from '../actions/app'
 import { setError, setLoader } from '../actions/common'
 
-const base_url = 'http://localhost:3001'
+const base_url = process.env.BASE_URL
 
 setRequestInterceptor()
 
