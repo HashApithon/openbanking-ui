@@ -36,12 +36,12 @@ const App = () => {
                             />
                             <PrivateRoute
                                 exact
-                                path="/accounts"
+                                path="/aisp"
                                 render={() => <Accounts />}
                             />
                             <PrivateRoute
                                 exact
-                                path="/payments"
+                                path="/pisp"
                                 render={() => <Payments />}
                             />
                             <Route path="*" component={NotFound} />

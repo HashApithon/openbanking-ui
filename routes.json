@@ -1,9 +1,11 @@
 {
     "/api/*": "/$1",
+    "/:type/init": "/init",
     "/accounts/:id": "/account",
     "/accounts/:id/transactions": "/transactions",
     "/accounts/:id/direct-debits": "/direct-debits",
     "/accounts/:id/balances": "/balances",
     "/accounts/:id/standing-orders": "/standing-orders",
-    "/accounts/:id/products": "/products"
+    "/accounts/:id/products": "/products",
+    "/domestic-payments/:id": "/domestic-payment-status"
 }
