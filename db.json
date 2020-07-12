@@ -1,292 +1,293 @@
 {
-    "init": {
-        "authorizationUrl": "/loading"
-    },
-    "token": {
-        "code": "Njugff123Ahejkf8hbkkjjh"
-    },
-    "accounts": {
-        "Data": {
-            "Account": [
-                {
-                    "AccountId": "string",
-                    "Currency": "string",
-                    "AccountType": "Business",
-                    "AccountSubType": "ChargeCard",
-                    "Description": "string",
-                    "Nickname": "string",
-                    "Account": {
-                        "SchemeName": "UK.OBIE.IBAN",
-                        "Identification": "string",
-                        "SecondaryIdentification": "string",
-                        "Name": "string"
-                    },
-                    "Servicer": {
-                        "SchemeName": "UK.OBIE.BICFI",
-                        "Identification": "string"
-                    }
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0
+  "init": {
+    "authorizationUrl": "/loading"
+  },
+  "token": {
+    "access_token": "Njugff123Ahejkf8hbkkjjh",
+    "refresh_token":"1245-hdh6-g5s8b=bdddd"
+  },
+  "accounts": {
+    "Data": {
+      "Account": [
+        {
+          "AccountId": "string",
+          "Currency": "string",
+          "AccountType": "Business",
+          "AccountSubType": "ChargeCard",
+          "Description": "string",
+          "Nickname": "string",
+          "Account": {
+            "SchemeName": "UK.OBIE.IBAN",
+            "Identification": "string",
+            "SecondaryIdentification": "string",
+            "Name": "string"
+          },
+          "Servicer": {
+            "SchemeName": "UK.OBIE.BICFI",
+            "Identification": "string"
+          }
         }
+      ]
     },
-    "account": {
-        "Data": {
-            "Account": [
-                {
-                    "AccountId": "string",
-                    "Currency": "string",
-                    "AccountType": "Business",
-                    "AccountSubType": "ChargeCard",
-                    "Description": "string",
-                    "Nickname": "string",
-                    "Account": {
-                        "SchemeName": "UK.OBIE.IBAN",
-                        "Identification": "string",
-                        "SecondaryIdentification": "string",
-                        "Name": "string"
-                    },
-                    "Servicer": {
-                        "SchemeName": "UK.OBIE.BICFI",
-                        "Identification": "string"
-                    }
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0
-        }
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
     },
-    "transactions": {
-        "Data": {
-            "Transaction": [
-                {
-                    "AccountId": "string",
-                    "TransactionId": "string",
-                    "Amount": {
-                        "Amount": "string",
-                        "Currency": "string"
-                    },
-                    "CreditDebitIndicator": "Credit",
-                    "Status": "Booked",
-                    "BookingDateTime": "2020-07-10T13:32:08.164Z",
-                    "ValueDateTime": "2020-07-10T13:32:08.164Z",
-                    "TransactionInformation": "string",
-                    "AddressLine": "string",
-                    "BankTransactionCode": {
-                        "Code": "string",
-                        "SubCode": "string"
-                    },
-                    "ProprietaryBankTransactionCode": {
-                        "Code": "string",
-                        "Issuer": "string"
-                    },
-                    "Balance": {
-                        "Amount": {
-                            "Amount": "string",
-                            "Currency": "string"
-                        },
-                        "CreditDebitIndicator": "Credit",
-                        "Type": "ClosingAvailable"
-                    },
-                    "MerchantDetails": {
-                        "MerchantName": "string",
-                        "MerchantCategoryCode": "string"
-                    }
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0
-        }
-    },
-    "balances": {
-        "Data": {
-            "Balance": [
-                {
-                    "AccountId": "string",
-                    "Amount": {
-                        "Amount": "string",
-                        "Currency": "string"
-                    },
-                    "CreditDebitIndicator": "Credit",
-                    "Type": "ClosingAvailable",
-                    "DateTime": "2020-07-10T13:33:02.328Z",
-                    "CreditLine": [
-                        {
-                            "Included": true,
-                            "Amount": {
-                                "Amount": "string",
-                                "Currency": "string"
-                            },
-                            "Type": "Pre-Agreed"
-                        }
-                    ]
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0
-        }
-    },
-    "direct-debits": {
-        "Data": {
-            "DirectDebit": [
-                {
-                    "AccountId": "string",
-                    "MandateIdentification": "string",
-                    "DirectDebitStatusCode": "Active",
-                    "Name": "string",
-                    "PreviousPaymentDateTime": "2020-07-10T13:33:39.229Z",
-                    "PreviousPaymentAmount": {
-                        "Amount": "string",
-                        "Currency": "string"
-                    }
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0,
-            "FirstAvailableDateTime": "2020-07-10T13:33:39.230Z",
-            "LastAvailableDateTime": "2020-07-10T13:33:39.230Z"
-        }
-    },
-    "standing-orders": {
-        "Data": {
-            "StandingOrder": [
-                {
-                    "AccountId": "string",
-                    "Frequency": "string",
-                    "Reference": "string",
-                    "FirstPaymentDateTime": "2020-07-10T13:34:22.336Z",
-                    "NextPaymentDateTime": "2020-07-10T13:34:22.336Z",
-                    "FinalPaymentDateTime": "2020-07-10T13:34:22.336Z",
-                    "FirstPaymentAmount": {
-                        "Amount": "string",
-                        "Currency": "string"
-                    },
-                    "NextPaymentAmount": {
-                        "Amount": "string",
-                        "Currency": "string"
-                    },
-                    "FinalPaymentAmount": {
-                        "Amount": "string",
-                        "Currency": "string"
-                    },
-                    "StandingOrderStatusCode": "Active",
-                    "CreditorAgent": {
-                        "SchemeName": "UK.OBIE.BICFI",
-                        "Identification": "string"
-                    },
-                    "CreditorAccount": {
-                        "SchemeName": "UK.OBIE.IBAN",
-                        "Identification": "string",
-                        "Name": "string"
-                    }
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0,
-            "FirstAvailableDateTime": "2020-07-10T13:34:22.336Z",
-            "LastAvailableDateTime": "2020-07-10T13:34:22.336Z"
-        }
-    },
-    "products": {
-        "Data": {
-            "Product": [
-                {
-                    "AccountId": "string",
-                    "ProductId": "string",
-                    "ProductType": "PersonalCurrentAccount",
-                    "MarketingStateId": "string",
-                    "SecondaryProductId": "string",
-                    "OtherProductType": {
-                        "Name": "string",
-                        "Description": "string"
-                    },
-                    "ProductName": "string"
-                }
-            ]
-        },
-        "Links": {
-            "Self": "string",
-            "Prev": "string",
-            "Next": "string"
-        },
-        "Meta": {
-            "TotalPages": 0,
-            "FirstAvailableDateTime": "2020-07-10T13:36:43.573Z",
-            "LastAvailableDateTime": "2020-07-10T13:36:43.573Z"
-        }
-    },
-    "domestic-payments": {},
-    "domestic-payment-status": {
-        "Data": {
-            "DomesticPaymentId": "16e53daf65a44484928a3d66b82b122a",
-            "ConsentId": "6710128983094680bbe01eed6e9e8d71",
-            "CreationDateTime": "2019-01-07T17:38:18.432Z",
-            "Status": "AcceptedSettlementInProcess",
-            "StatusUpdateDateTime": "2019-01-07T17:38:23.106Z",
-            "Initiation": {
-                "InstructionIdentification": "6a0421b8382848c68b41c0d78eebca61",
-                "EndToEndIdentification": "3baf59d96bfc4430a91943861b07544",
-                "InstructedAmount": {
-                    "Amount": "1.00",
-                    "Currency": "GBP"
-                },
-                "DebtorAccount": {
-                    "SchemeName": "UK.OBIE.SortCodeAccountNumber",
-                    "Identification": "60225339600416"
-                },
-                "CreditorAccount": {
-                    "SchemeName": "UK.OBIE.SortCodeAccountNumber",
-                    "Identification": "60225392909531",
-                    "Name": "ACME Ltd"
-                },
-                "RemittanceInformation": {
-                    "Unstructured": "Unstructured",
-                    "Reference": "00c041b955c242cf8b"
-                }
-            }
-        },
-        "Links": {
-            "Self": "https://api.natwest.com/open-banking/v3.1/pisp/domestic-payments/16e53daf65a44484928a3d66b82b122a"
-        },
-        "Meta": {
-            "TotalPages": 1
-        }
+    "Meta": {
+      "TotalPages": 0
     }
+  },
+  "account": {
+    "Data": {
+      "Account": [
+        {
+          "AccountId": "string",
+          "Currency": "string",
+          "AccountType": "Business",
+          "AccountSubType": "ChargeCard",
+          "Description": "string",
+          "Nickname": "string",
+          "Account": {
+            "SchemeName": "UK.OBIE.IBAN",
+            "Identification": "string",
+            "SecondaryIdentification": "string",
+            "Name": "string"
+          },
+          "Servicer": {
+            "SchemeName": "UK.OBIE.BICFI",
+            "Identification": "string"
+          }
+        }
+      ]
+    },
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
+    },
+    "Meta": {
+      "TotalPages": 0
+    }
+  },
+  "transactions": {
+    "Data": {
+      "Transaction": [
+        {
+          "AccountId": "string",
+          "TransactionId": "string",
+          "Amount": {
+            "Amount": "string",
+            "Currency": "string"
+          },
+          "CreditDebitIndicator": "Credit",
+          "Status": "Booked",
+          "BookingDateTime": "2020-07-10T13:32:08.164Z",
+          "ValueDateTime": "2020-07-10T13:32:08.164Z",
+          "TransactionInformation": "string",
+          "AddressLine": "string",
+          "BankTransactionCode": {
+            "Code": "string",
+            "SubCode": "string"
+          },
+          "ProprietaryBankTransactionCode": {
+            "Code": "string",
+            "Issuer": "string"
+          },
+          "Balance": {
+            "Amount": {
+              "Amount": "string",
+              "Currency": "string"
+            },
+            "CreditDebitIndicator": "Credit",
+            "Type": "ClosingAvailable"
+          },
+          "MerchantDetails": {
+            "MerchantName": "string",
+            "MerchantCategoryCode": "string"
+          }
+        }
+      ]
+    },
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
+    },
+    "Meta": {
+      "TotalPages": 0
+    }
+  },
+  "balances": {
+    "Data": {
+      "Balance": [
+        {
+          "AccountId": "string",
+          "Amount": {
+            "Amount": "string",
+            "Currency": "string"
+          },
+          "CreditDebitIndicator": "Credit",
+          "Type": "ClosingAvailable",
+          "DateTime": "2020-07-10T13:33:02.328Z",
+          "CreditLine": [
+            {
+              "Included": true,
+              "Amount": {
+                "Amount": "string",
+                "Currency": "string"
+              },
+              "Type": "Pre-Agreed"
+            }
+          ]
+        }
+      ]
+    },
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
+    },
+    "Meta": {
+      "TotalPages": 0
+    }
+  },
+  "direct-debits": {
+    "Data": {
+      "DirectDebit": [
+        {
+          "AccountId": "string",
+          "MandateIdentification": "string",
+          "DirectDebitStatusCode": "Active",
+          "Name": "string",
+          "PreviousPaymentDateTime": "2020-07-10T13:33:39.229Z",
+          "PreviousPaymentAmount": {
+            "Amount": "string",
+            "Currency": "string"
+          }
+        }
+      ]
+    },
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
+    },
+    "Meta": {
+      "TotalPages": 0,
+      "FirstAvailableDateTime": "2020-07-10T13:33:39.230Z",
+      "LastAvailableDateTime": "2020-07-10T13:33:39.230Z"
+    }
+  },
+  "standing-orders": {
+    "Data": {
+      "StandingOrder": [
+        {
+          "AccountId": "string",
+          "Frequency": "string",
+          "Reference": "string",
+          "FirstPaymentDateTime": "2020-07-10T13:34:22.336Z",
+          "NextPaymentDateTime": "2020-07-10T13:34:22.336Z",
+          "FinalPaymentDateTime": "2020-07-10T13:34:22.336Z",
+          "FirstPaymentAmount": {
+            "Amount": "string",
+            "Currency": "string"
+          },
+          "NextPaymentAmount": {
+            "Amount": "string",
+            "Currency": "string"
+          },
+          "FinalPaymentAmount": {
+            "Amount": "string",
+            "Currency": "string"
+          },
+          "StandingOrderStatusCode": "Active",
+          "CreditorAgent": {
+            "SchemeName": "UK.OBIE.BICFI",
+            "Identification": "string"
+          },
+          "CreditorAccount": {
+            "SchemeName": "UK.OBIE.IBAN",
+            "Identification": "string",
+            "Name": "string"
+          }
+        }
+      ]
+    },
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
+    },
+    "Meta": {
+      "TotalPages": 0,
+      "FirstAvailableDateTime": "2020-07-10T13:34:22.336Z",
+      "LastAvailableDateTime": "2020-07-10T13:34:22.336Z"
+    }
+  },
+  "products": {
+    "Data": {
+      "Product": [
+        {
+          "AccountId": "string",
+          "ProductId": "string",
+          "ProductType": "PersonalCurrentAccount",
+          "MarketingStateId": "string",
+          "SecondaryProductId": "string",
+          "OtherProductType": {
+            "Name": "string",
+            "Description": "string"
+          },
+          "ProductName": "string"
+        }
+      ]
+    },
+    "Links": {
+      "Self": "string",
+      "Prev": "string",
+      "Next": "string"
+    },
+    "Meta": {
+      "TotalPages": 0,
+      "FirstAvailableDateTime": "2020-07-10T13:36:43.573Z",
+      "LastAvailableDateTime": "2020-07-10T13:36:43.573Z"
+    }
+  },
+  "domestic-payments": {},
+  "domestic-payment-status": {
+    "Data": {
+      "DomesticPaymentId": "16e53daf65a44484928a3d66b82b122a",
+      "ConsentId": "6710128983094680bbe01eed6e9e8d71",
+      "CreationDateTime": "2019-01-07T17:38:18.432Z",
+      "Status": "AcceptedSettlementInProcess",
+      "StatusUpdateDateTime": "2019-01-07T17:38:23.106Z",
+      "Initiation": {
+        "InstructionIdentification": "6a0421b8382848c68b41c0d78eebca61",
+        "EndToEndIdentification": "3baf59d96bfc4430a91943861b07544",
+        "InstructedAmount": {
+          "Amount": "1.00",
+          "Currency": "GBP"
+        },
+        "DebtorAccount": {
+          "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+          "Identification": "60225339600416"
+        },
+        "CreditorAccount": {
+          "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+          "Identification": "60225392909531",
+          "Name": "ACME Ltd"
+        },
+        "RemittanceInformation": {
+          "Unstructured": "Unstructured",
+          "Reference": "00c041b955c242cf8b"
+        }
+      }
+    },
+    "Links": {
+      "Self": "https://api.natwest.com/open-banking/v3.1/pisp/domestic-payments/16e53daf65a44484928a3d66b82b122a"
+    },
+    "Meta": {
+      "TotalPages": 1
+    }
+  }
 }

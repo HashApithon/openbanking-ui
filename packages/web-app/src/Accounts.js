@@ -8,7 +8,7 @@ import {
     getAccountDirectDebits,
     getAccountProducts,
     getAccountStandingOrders,
-} from '@openbanking/ui-data/src/services/account-service'
+} from '@openbanking/ui-data/lib/services/account-service'
 import InfoDisplay from '@openbanking/ui-common/lib/InfoDisplay'
 import './Accounts.css'
 

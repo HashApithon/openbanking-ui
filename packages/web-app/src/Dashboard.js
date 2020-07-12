@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { initializeJourney } from '@openbanking/ui-data/src/services/auth-service'
+import { initializeJourney } from '@openbanking/ui-data/lib/services/auth-service'
 
 const Dashboard = () => {
     const dispatch = useDispatch()

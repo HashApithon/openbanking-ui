@@ -4,7 +4,7 @@ import { Redirect, Route } from 'react-router'
 
 const PrivateRoute = ({ children, ...rest }) => {
     const token = useSelector(
-        (state) => state.auth.token || localStorage.getItem('token')
+        (state) => state.auth.token || (localStorage.getItem('token') && localStorage.getItem('token')!=='undefined')
     )
     return token ? <Route {...rest}>{children}</Route> : <Redirect to="/" />
 }

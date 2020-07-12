@@ -10,7 +10,7 @@ setRequestInterceptor()
 export default function createRequest(
     dispatch,
     endpoint,
-    method = 'get',
+    method = 'GET',
     data = {},
     headers = {},
     callbackFn
