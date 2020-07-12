@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "lerna run --scope @openbanking/web-app --include-dependencies --parallel start",
-    "mock-server": "json-server --watch db.json --routes routes.json --port 3001",
+    "mock-server": "json-server db.json --routes routes.json --middlewares jsonserver-middleware.js --port 3001 --watch",
     "postinstall": "lerna bootstrap --hoist"
   },
   "husky": {

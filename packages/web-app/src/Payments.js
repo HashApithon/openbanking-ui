@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import {
     createDomesticPayment,
     getDomesticPaymentStatus,
-} from '@openbanking/ui-data/src/services/payment-service'
+} from '@openbanking/ui-data/lib/services/payment-service'
 import InfoDisplay from '@openbanking/ui-common/lib/InfoDisplay'
 import './Accounts.css'
 

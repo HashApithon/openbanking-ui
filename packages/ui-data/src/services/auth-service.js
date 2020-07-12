@@ -7,8 +7,11 @@ export function getAccessToken(dispatch, code, type) {
         response
     ) {
         dispatch(setAccessToken(response.access_token, response.refresh_token))
-        localStorage.setItem('token', response.access_token)
-        localStorage.setItem('refresh_token', response.refresh_token)
+        if(response.access_token && response.refresh_token){
+            localStorage.setItem('token', response.access_token)
+            localStorage.setItem('refresh_token', response.refresh_token)
+        }
+        
         sessionStorage.removeItem('type', type)
         document.location.href = `/${type}`
     })

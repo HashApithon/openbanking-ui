@@ -10,10 +10,8 @@ function Redirecting(props) {
     if (!props.journeyType) {
         return <Redirect to="/" />
     } else {
-        if (props.journeyType) {
             const { code } = parse(window.location.hash.substring(1))
             props.getAccessToken(code, props.journeyType)
-        }
     }
     return <Loading />
 }
