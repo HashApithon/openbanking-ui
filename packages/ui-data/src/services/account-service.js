@@ -1,12 +1,17 @@
 import createRequest from './request'
 import { setData } from '../actions/app'
 
+
+//accounts api's 
 export function getAccountList(dispatch) {
     createRequest(dispatch, '/accounts', 'GET', null, {}, function (response) {
+        //callback placeholder where one or multiple actions can be dispatched
         dispatch(setData(response))
     })
 }
 
+
+// get account by id
 export function getAccountById(dispatch, accountId) {
     createRequest(
         dispatch,

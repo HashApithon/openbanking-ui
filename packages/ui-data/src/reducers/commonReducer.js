@@ -1,6 +1,5 @@
 import { SET_ERROR, SET_LOADING } from '../actionCreators/common'
 
-
 const initialState = {
     loading:false,
     error:null

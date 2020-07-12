@@ -9,6 +9,7 @@ import './Accounts.css'
 
 const PAYMENT_ID = process.env.REACT_APP_PAYMENT_ID
 
+//payments api list
 const Payments = () => {
     const data = useSelector((state) => state.app.data)
     const dispatch = useDispatch()

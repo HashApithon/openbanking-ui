@@ -7,6 +7,8 @@ import networkService from '@openbanking/ui-data/lib/services/network-service'
 import App from './App'
 import './index.css'
 
+// bootstrapping react app
+
 const history = createBrowserHistory()
 networkService.setupInterceptors(store, history)
 
