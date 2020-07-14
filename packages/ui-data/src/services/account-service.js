@@ -1,21 +1,21 @@
 import createRequest from './request'
 import { setData } from '../actions/app'
 
-
-//accounts api's 
+//accounts api's
 export function getAccountList(dispatch) {
-    createRequest(dispatch, '/accounts', 'GET', null, {}, function (response) {
+    createRequest(dispatch, '/aisp/accounts', 'GET', null, {}, function (
+        response
+    ) {
         //callback placeholder where one or multiple actions can be dispatched
         dispatch(setData(response))
     })
 }
 
-
 // get account by id
 export function getAccountById(dispatch, accountId) {
     createRequest(
         dispatch,
-        `/accounts/${accountId}`,
+        `/aisp/accounts/${accountId}`,
         'GET',
         null,
         {},
@@ -28,7 +28,7 @@ export function getAccountById(dispatch, accountId) {
 export function getAccountBalances(dispatch, accountId) {
     createRequest(
         dispatch,
-        `/accounts/${accountId}/balances`,
+        `/aisp/accounts/${accountId}/balances`,
         'GET',
         null,
         {},
@@ -41,7 +41,7 @@ export function getAccountBalances(dispatch, accountId) {
 export function getAccountTransactions(dispatch, accountId) {
     createRequest(
         dispatch,
-        `/accounts/${accountId}/transactions`,
+        `/aisp/accounts/${accountId}/transactions`,
         'GET',
         null,
         {},
@@ -54,7 +54,7 @@ export function getAccountTransactions(dispatch, accountId) {
 export function getAccountDirectDebits(dispatch, accountId) {
     createRequest(
         dispatch,
-        `/accounts/${accountId}/direct-debits`,
+        `/aisp/accounts/${accountId}/direct-debits`,
         'GET',
         null,
         {},
@@ -67,7 +67,7 @@ export function getAccountDirectDebits(dispatch, accountId) {
 export function getAccountStandingOrders(dispatch, accountId) {
     createRequest(
         dispatch,
-        `/accounts/${accountId}/standing-orders`,
+        `/aisp/accounts/${accountId}/standing-orders`,
         'GET',
         null,
         {},
@@ -78,7 +78,7 @@ export function getAccountStandingOrders(dispatch, accountId) {
 }
 
 export function getAccountProducts(dispatch, params) {
-    createRequest(dispatch, '/products', 'GET', params, {}, function (
+    createRequest(dispatch, '/aisp/products', 'GET', params, {}, function (
         response
     ) {
         dispatch(setData(response))

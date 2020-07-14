@@ -4,7 +4,7 @@ import { setData } from '../actions/app'
 export function createDomesticPayment(dispatch, payload) {
     createRequest(
         dispatch,
-        '/domestic-payments',
+        'pisp/domestic-payments',
         'POST',
         { payload },
         {},
