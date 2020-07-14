@@ -1,11 +1,12 @@
 {
     "/api/*": "/$1",
     "/:type/init": "/init",
-    "/accounts/:id": "/account",
-    "/accounts/:id/transactions": "/transactions",
-    "/accounts/:id/direct-debits": "/direct-debits",
-    "/accounts/:id/balances": "/balances",
-    "/accounts/:id/standing-orders": "/standing-orders",
-    "/accounts/:id/products": "/products",
-    "/domestic-payments/:id": "/domestic-payment-status"
+    "/aisp/accounts":"/accounts",
+    "/aisp/accounts/:id": "/account",
+    "/aisp/accounts/:id/transactions": "/transactions",
+    "/aisp/accounts/:id/direct-debits": "/direct-debits",
+    "/aisp/accounts/:id/balances": "/balances",
+    "/aisp/accounts/:id/standing-orders": "/standing-orders",
+    "/aisp/accounts/:id/products": "/products",
+    "/aisp/domestic-payments/:id": "/domestic-payment-status"
 }

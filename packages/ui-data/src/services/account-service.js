@@ -1,5 +1,6 @@
 import createRequest from './request'
 import { setData } from '../actions/app'
+import { setAccountId } from '../actions/account'
 
 //accounts api's
 export function getAccountList(dispatch) {
@@ -8,6 +9,9 @@ export function getAccountList(dispatch) {
     ) {
         //callback placeholder where one or multiple actions can be dispatched
         dispatch(setData(response))
+        if(response.Data.Account.length>0){
+            dispatch(setAccountId(response.Data.Account[0].AccountId))
+        }
     })
 }
 

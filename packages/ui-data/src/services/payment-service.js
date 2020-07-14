@@ -1,5 +1,4 @@
 import createRequest from './request'
-import { setData } from '../actions/app'
 
 export function createDomesticPayment(dispatch, payload) {
     createRequest(
@@ -9,7 +8,7 @@ export function createDomesticPayment(dispatch, payload) {
         { payload },
         {},
         function (response) {
-            dispatch(setData(response))
+            // to do 
         }
     )
 }
@@ -22,7 +21,7 @@ export function getDomesticPaymentStatus(dispatch) {
         null,
         {},
         function (response) {
-            dispatch(setData(response))
+           // to do 
         }
     )
 }

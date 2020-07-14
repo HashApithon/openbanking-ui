@@ -1,6 +1,6 @@
 {
   "init": {
-    "authorizationUrl": "/loading"
+    "authorizationUrl": "http://localhost:3000/loading"
   },
   "token": {
     "access_token": "Njugff123Ahejkf8hbkkjjh",
@@ -10,7 +10,7 @@
     "Data": {
       "Account": [
         {
-          "AccountId": "string",
+          "AccountId": "1234487776",
           "Currency": "string",
           "AccountType": "Business",
           "AccountSubType": "ChargeCard",
