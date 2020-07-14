@@ -22,7 +22,10 @@ export default function createRequest(
         headers,
     })
         .then(function (response) {
-            dispatch(setLoader(false))
+            // dont stop loader in case of redirection
+            if(!endpoint.includes('init')){
+                dispatch(setLoader(false))
+            }
             callbackFn(response.data)
         })
         .catch(function (error) {

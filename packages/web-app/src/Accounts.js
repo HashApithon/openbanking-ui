@@ -15,7 +15,7 @@ import './Accounts.css'
 //accounts api list
 const Accounts = () => {
     const data = useSelector((state) => state.app.data)
-    const accountId = useSelector((state) => state.account.accountId) || process.env.REACT_APP_ACCOUNT_ID
+    const accountId = useSelector((state) => state.account.accountId)
 
     const dispatch = useDispatch()
 
