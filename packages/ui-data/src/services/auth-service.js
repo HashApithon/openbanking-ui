@@ -31,6 +31,6 @@ export function initializeJourney(dispatch, type) {
         sessionStorage.setItem('type', type)
 
         // set url as per server response
-        document.location = response.authorizationUrl
+        document.location = response
     })
 }
