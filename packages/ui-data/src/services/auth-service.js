@@ -29,6 +29,8 @@ export function initializeJourney(dispatch, type) {
         response
     ) {
         sessionStorage.setItem('type', type)
+
+        // set url as per server response
         document.location = response
     })
 }

@@ -12,12 +12,11 @@ import {
 import InfoDisplay from '@openbanking/ui-common/lib/InfoDisplay'
 import './Accounts.css'
 
-// stubbed account id configured in .env
-const ACCOUNT_ID = process.env.REACT_APP_ACCOUNT_ID
-
 //accounts api list
 const Accounts = () => {
     const data = useSelector((state) => state.app.data)
+    const accountId = useSelector((state) => state.account.accountId) || process.env.REACT_APP_ACCOUNT_ID
+
     const dispatch = useDispatch()
 
     return (
@@ -33,20 +32,20 @@ const Accounts = () => {
                     </button>
                     <button
                         className="buttonLinks"
-                        onClick={() => getAccountById(dispatch, ACCOUNT_ID)}
+                        onClick={() => getAccountById(dispatch, accountId)}
                     >
                         Get Account By Id
                     </button>
                     <button
                         className="buttonLinks"
-                        onClick={() => getAccountBalances(dispatch, ACCOUNT_ID)}
+                        onClick={() => getAccountBalances(dispatch, accountId)}
                     >
                         Get Account Balances
                     </button>
                     <button
                         className="buttonLinks"
                         onClick={() =>
-                            getAccountDirectDebits(dispatch, ACCOUNT_ID)
+                            getAccountDirectDebits(dispatch, accountId)
                         }
                     >
                         Get Account Direct Debits
@@ -54,21 +53,21 @@ const Accounts = () => {
                     <button
                         className="buttonLinks"
                         onClick={() =>
-                            getAccountTransactions(dispatch, ACCOUNT_ID)
+                            getAccountTransactions(dispatch, accountId)
                         }
                     >
                         Get Account Transactions
                     </button>
                     <button
                         className="buttonLinks"
-                        onClick={() => getAccountProducts(dispatch, ACCOUNT_ID)}
+                        onClick={() => getAccountProducts(dispatch, accountId)}
                     >
                         Get Account Products
                     </button>
                     <button
                         className="buttonLinks"
                         onClick={() =>
-                            getAccountStandingOrders(dispatch, ACCOUNT_ID)
+                            getAccountStandingOrders(dispatch, accountId)
                         }
                     >
                         Get Account Standing Orders

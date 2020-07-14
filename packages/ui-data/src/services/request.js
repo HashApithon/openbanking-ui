@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { setRequestInterceptor } from './request-interceptor'
-import { setData } from '../actions/app'
 import { setError, setLoader } from '../actions/common'
 
 const base_url = 'http://localhost:8080/open-banking/v3'
