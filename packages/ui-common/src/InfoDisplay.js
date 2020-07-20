@@ -2,6 +2,7 @@ import React from 'react'
 import './InfoDisplay.css'
 import { useDispatch, useSelector } from 'react-redux'
 import ListAccounts from './ListAccounts'
+import ShowBalance from './ShowBalance'
 import {
   getAccountList,
   getAccountById,
@@ -20,16 +21,13 @@ export default function InfoDisplay({ data = {} }) {
     const dispatch = useDispatch()
     
     var accounts=data.Data.Account;
+    var balance=data.Data.Balance;
+
+    if(accounts!==null)
+    return <ListAccounts accounts={accounts} />
+    else
+    return <ShowBalance balance={balance} />
+
     
-    return (
-       /* <div className="infoContainer">
-            <div className="formattedData">
-                <pre>{JSON.stringify(data, null, 4)}</pre>
-            </div>
-        </div>*/
-        <ListAccounts accounts={accounts} />
-        
-        
-    )
         
 }
