@@ -3,6 +3,7 @@ import './InfoDisplay.css'
 import { useDispatch, useSelector } from 'react-redux'
 import ListAccounts from './ListAccounts'
 import ShowBalance from './ShowBalance'
+import Showtransactions from './Showtransactions'
 import {
   getAccountList,
   getAccountById,
@@ -15,6 +16,7 @@ import {
 //display formatted json data
 export default function InfoDisplay({ data = {} }) {
     if (!data) {
+      console.log("No data");
         return null
     }
     console.log(data);
@@ -22,12 +24,13 @@ export default function InfoDisplay({ data = {} }) {
     
     var accounts=data.Data.Account;
     var balance=data.Data.Balance;
-
+    var transaction=data.Data.Transaction;
     if(accounts!==null)
     return <ListAccounts accounts={accounts} />
-    else
+    else if(balance!==null)
     return <ShowBalance balance={balance} />
-
+    else if(transaction!=null)
+    return <Showtransactions transaction={transaction} />
     
         
 }

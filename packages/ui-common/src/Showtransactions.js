@@ -2,7 +2,7 @@ import React from 'react'
 import './InfoDisplay.css'
 
 
-export default function ShowBalance(props) {
+export default function Showtransactions(props) {
     if (!props.balance) {
         console.log("no data");
         return null;
@@ -11,8 +11,8 @@ export default function ShowBalance(props) {
     
     
     
-    var balance=props.balance;
-    //var transaction=props.transaction;
+    //var balance=props.balance;
+    var transaction=props.transaction;
     return (
        /* <div className="infoContainer">
             <div className="formattedData">
@@ -21,7 +21,7 @@ export default function ShowBalance(props) {
         </div>*/
       
         <div>
-            {transaction[0].Amount}
+            {transaction[0].TransactionId}
         </div>
         
     )

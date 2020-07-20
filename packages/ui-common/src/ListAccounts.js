@@ -26,7 +26,7 @@ export default function ListAccounts(props) {
                 <pre>{JSON.stringify(data, null, 4)}</pre>
             </div>
         </div>*/
-      
+      <div>
         <div class="ui three stackable cards">
         {accounts.map((account, index)=>(
             <div class="ui blue card" key={index}>
@@ -55,6 +55,12 @@ export default function ListAccounts(props) {
         
             ))}
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <button class="ui violet button">Get your Credit Score by clicking</button>
+
+</div>
         
     )
         
