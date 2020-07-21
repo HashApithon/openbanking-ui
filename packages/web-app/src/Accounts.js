@@ -16,7 +16,7 @@ import './Accounts.css'
 const Accounts = () => {
     const data = useSelector((state) => state.app.data)
     const accountId = useSelector((state) => state.account.accountId)
-
+    console.log(data);
     const dispatch = useDispatch()
 
     return (
