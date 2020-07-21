@@ -62,7 +62,7 @@ const Accounts = () => {
                         className="buttonLinks"
                         onClick={() => getAccountProducts(dispatch, accountId)}
                     >
-                        Get Account Products
+                        Check loan eligibility criteria
                     </button>
                     <button
                         className="buttonLinks"

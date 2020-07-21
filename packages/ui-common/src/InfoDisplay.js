@@ -25,11 +25,11 @@ export default function InfoDisplay({ data = {} }) {
     var accounts=data.Data.Account;
     var balance=data.Data.Balance;
     var transaction=data.Data.Transaction;
-    if(accounts!==null)
+    if(accounts)
     return <ListAccounts accounts={accounts} />
-    else if(balance!==null)
+    else if(balance)
     return <ShowBalance balance={balance} />
-    else if(transaction!=null)
+    else if(transaction)
     return <Showtransactions transaction={transaction} />
     
         

@@ -1,5 +1,6 @@
 import React from 'react'
 import './InfoDisplay.css'
+import { Alert } from 'reactstrap';
 
 
 export default function ShowBalance(props) {
@@ -20,10 +21,9 @@ export default function ShowBalance(props) {
             </div>
         </div>*/
       
-        <div>
-            {transaction[0].Amount}
-        </div>
-        
+        <Alert color="success">
+        <h2>Currently your balance is £{balance[0].Amount.Amount}</h2>
+      </Alert>
     )
         
 }

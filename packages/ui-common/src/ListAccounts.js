@@ -49,6 +49,14 @@ export default function ListAccounts(props) {
             <div class="extra content">
               <button class="ui green button" 
               onClick={() => getAccountBalances(dispatch, account.AccountId)}>Know balance</button>
+              <br></br>
+              <br>
+              </br>
+              <br>
+              </br>
+
+              <button class="ui blue button" 
+              onClick={() => getAccountTransactions(dispatch, account.AccountId)}>Get last 3 Transactions </button>
             </div>
           </div>
         
